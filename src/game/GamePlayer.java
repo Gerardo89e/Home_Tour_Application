@@ -14,13 +14,6 @@ public class GamePlayer {
 	
 	private Room currentRoom;
 	
-//	private String[] inventory;
-//	private boolean ligther=false;
-	private boolean tool=false;
-	
-	public boolean isTool() {
-		return tool;
-	}
 	
 	public Room getCurrentRoom() {
 		return currentRoom;

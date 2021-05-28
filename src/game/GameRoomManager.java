@@ -3,145 +3,9 @@ package game;
 import fixtures.Room;
 
 public class GameRoomManager{
-	//private Room startingRoom;
-	
-	/*public GamePlayer(String name, String shortDescription, String longDescription) {
-		super(name, shortDescription, longDescription);
-		// TODO Auto-generated constructor stub
-	}*/
 
 	public static Room[] init() {
 		Room[] houseRooms=new Room[16];//changing the name rooms to houseRooms
-/*
-		Room startRoom = new Room(
-				"You wake up here again\n",
-				"In a vaguely familiar place",
-				"You look around the room, it's a round room with rough, worn walls.\n"
-				+ "There appears to be a fireplace in the middle filled with wood.\n"
-				+ "You can taste the damp air as you breath,\n"
-				+ "looking up you can see a glistening crystal illuminating the room softly.\n",
-				1,
-				2,
-				"",
-				"Seems like I might be able to light a fire if I had a lighter, \notherwise I guess I have to go left or right.\n");
-		houseRooms[0] = startRoom;
-		
-		Room fireRoom = new Room(
-				"Left - ",
-				"Looking down the walk way it looks dark, but you can smell smoke in the air\n",
-				"It's very dim in this room, but with the little light that reaches this room you can make out the details.\n"
-				+ "In the center of the room appears to be the remains of a campfire,\n"
-				+ "next to the campfire is a small lighter.\n",
-				2,
-				3,
-				"lighter",
-				"I could grab the lighter.\n");
-		houseRooms[1] = fireRoom;
-		
-		Room echoRoom = new Room(
-				"Right - ",
-				"You can hear your voice echo back to you whenever you try to speak.\n",
-				"You enter a small room and your steps echo back to you with every step. \n"
-				+ "The longer you spend in this room the more you swear you can start hearing footsteps that aren't your own.\n",
-				0,
-				4,
-				""
-				,"I feel like I shouldn't stay here... too late");
-		houseRooms[2] = echoRoom;
-		Room wetRoom = new Room(
-				"Left - ",
-				"You can hear water dripping from this room.\n",
-				"As you walk into the room you notice that there's a decent amount of standing water in the room. \n"
-				+ "The smell of mildew hits you and you can see a thin white coating of mold on some of the stones.\n",
-				4,
-				5,
-				"",
-				"I guess there's nothing here, I should go left or go right.\n");
-		houseRooms[3] = wetRoom;
-		
-		Room skullRoom = new Room(
-				"Right - ",
-				"You can hear flames crackling from this pathway.\n",
-				"You gaze into the room and hundreds of skulls gaze coldly back at you. \n"
-				+ "They're set in niches in the walls in a checkerboard pattern, they all appear the same. \n"
-				+ "Each skull bears a half-melted candle on its head. \n"
-				+ "The grinning bones stare vacantly into the room, which otherwise seems empty.\n",
-				5,
-				6,
-				"",
-				"Something doesn't feel right... I should go left or go right.\n");
-		houseRooms[4] = skullRoom;
-		
-		Room chestRoom = new Room(
-				"Right - ",
-				"This seems like a normal pathway.\n",
-				"This small bare chamber holds nothing but a large ironbound chest, \n"
-				+ "which is big enough for a man to fit in and bears a heavy iron lock. \n"
-				+ "The floor has a layer of undisturbed dust upon it.\n",
-				9,
-				9,
-				"oldkey",
-				"If I had a key I could use it on that chest,\nI guess I have to go left or right...\n");
-		houseRooms[6] = chestRoom;
-		
-		Room floodedRoom = new Room(
-				"Left - ",
-				"There's a stream of water coming from this hallway.\n",
-				"You open the door to the room and you're hit with a small wave of water the floods out of the room.\n"
-				+ "As you regain composure you see the source of the water is coming from a hole in the wall.\n"
-				+ "You can see something glinting inside the hole.\n",
-				8,
-				8,
-				"key",
-				"Let's look at hole, otherwise I guess I have to go left or right...\n");
-		houseRooms[7] = floodedRoom;
-		
-		Room marbleRoom = new Room(
-				"Right - ",
-				"There's an elagent white light coming from this hallway\n",
-				"Unlike the cobblestone common throughout the houseRooms, \n"
-				+ "this room is walled and floored with black marble veined with white. \n"
-				+ "The ceiling is similarly marbled, but the thick pillars that hold it up are white. \n"
-				+ "A brown stain drips down one side of a nearby pillar.\n",
-				7,
-				7,
-				"",
-				"Doesn't look like anything is here I guess I have to go left or right...\n");
-		houseRooms[8] = marbleRoom;
-		
-		Room rockfallRoom = new Room(
-				"Left - ",
-				"There's a pile of rocks blocking this pathway\n",
-				"You attempt to move rocks out of the pathway.\n "
-				+ "One by one\n"
-				+ "Another rock hits the ground, you swear you can see progress being made.\n"
-				+ "...\n"
-				+ "..\n"
-				+ ".\n",
-				6,
-				6,
-				"",
-				"whoops");
-		houseRooms[9] = rockfallRoom;
-		
-		Room fingernailRoom = new Room(
-				"Right - ",
-				"You can't tell if that's the smell of blood or iron coming from here\n",
-				"This room has eerily smooth walls excluding the one side of the room that has a slight crack.\n"
-				+ "As you look closer at the crack you can see scratches and a pile of what appears to be\n"
-				+ "fingernails...",
-				5,
-				5,
-				"",
-				"I could inspect fingernails, but I feel like I should to go left or right...\n");
-		houseRooms[10] = fingernailRoom;
-		
-		
-		Room darkRoom = new Room( 
-			"Left/Right - ",
-			"There's nothing but darkness down this way.\n","You step into the darkness and wait.",-15,-15,"","Too late for help");
-		houseRooms[15] = darkRoom;
-*/		
 		
 		Room startRoom = new Room(
 				"As you walk in front of the house you see it in ruins\n",
@@ -156,7 +20,7 @@ public class GameRoomManager{
 				"As time goes on you question yourself if you made the right choice of entering alone in a worn down building.\n");
 		houseRooms[0] = startRoom;
 		
-		Room garageRoom = new Room(//fireRoom
+		Room garageRoom = new Room(
 				"Left - ",
 				"You choose to go the garage, seeing that it is closer to the foyer if you needed to bail from certain danger\n",
 				"The room is dark, but luckly you prepared for this and turn on a flashlight to see\n"
@@ -168,7 +32,7 @@ public class GameRoomManager{
 				"as you hear a scrathing on the walls\n");
 		houseRooms[1] = garageRoom;
 		
-		Room kitchenRoom = new Room(//echoRoom
+		Room kitchenRoom = new Room(
 				"Right - ",
 				"You open the door to the kitchen and heading inside you see that it completly in ruins.\n",
 				"Dishes broken on the floor, tiles from the floor are cracked, and some holes on the walls that look like someone smashed with a big mallet. \n"
@@ -179,7 +43,7 @@ public class GameRoomManager{
 				,"I feel like I shouldn't stay here... too late");
 		houseRooms[2] = kitchenRoom;
 		
-		Room dreadRoom = new Room(//wetRoom
+		Room dreadRoom = new Room(
 				"Left - ",
 				"While in the kitchen you saw a shadowly figure head hide from the corner of your eyes.\n",
 				"This time you panic but calmed down thinking it was a homeless person or maybe an animal. \n"
@@ -197,8 +61,8 @@ public class GameRoomManager{
 				+ "The way to the foyer is blocked by the disfiguered person. \n"
 				+ "with little choice you either go past him or go through the kitchen to the yard.. \n"
 				+ "Time slowed down to you as you though in your head and pondering on your chance of living.\n",
-				5,
-				6,
+				9,
+				9,
 				"",
 				"It is now or never!.\n");
 		houseRooms[7] = surviveRoom2;
@@ -240,18 +104,11 @@ public class GameRoomManager{
 				"",
 				"You decided it is best to leave the place before he changes his mind to take another wack at you. The End!.\n");
 		houseRooms[6] = Ending1;
+	
 	/*	Room darkRoom = new Room( 
 				"Left/Right - ",
 				"There's nothing but darkness down this way.\n","You step into the darkness and wait.",-15,-15,"","Too late for help");
 		houseRooms[16]=darkRoom;*/
 		return houseRooms;
-	    /*Room mainRoom = new Room(
-			"The Foyer",
-			"a small foyer",
-			"The small entryway of a neo-colonial house. A dining room is open to the south, where a large table can be seen." + "\n"
-			+ "The hardwood floor leads west into doorway, next to a staircase that leads up to a second floor." + "\n"
-			+ "To the north is a small room, where you can see a piano.");
-			this.rooms[0] = foyer;
-	        this.startingRoom = foyer;*/
 	}
 }

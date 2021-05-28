@@ -13,8 +13,6 @@ public class Room extends FixtureAbstract{
 	public Room(String name, String shortDescription, String longDescription,int left, int right, String str,String help) {
 		
 		super(name, shortDescription, longDescription);
-		// TODO Auto-geneated constructor stub
-		//this.exits= new Room[3];
 		this.leftDistance=left;
 		this.rightDistance=right;
 		this.item=str;

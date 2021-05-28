@@ -1,18 +1,19 @@
 package fixtures;
 
 abstract class FixtureAbstract {
-	public String name="";
-	public String shortDescription="";
-	public String longDescription="";	
+	public String name;
+	public String shortDescription;
+	public String longDescription;	
 	//Constructor to set the values that are inputed by user
 	public FixtureAbstract(String name, String shortDescription, String longDescription){
-		super();
+		//super();
 		this.name=name;
 		this.shortDescription=shortDescription;
 		this.longDescription=longDescription;
 	}
 	
 	//setters and getters for defining the user description
+	/*
 	public String getName(String name) {
 		return name;
 	}
@@ -32,5 +33,5 @@ abstract class FixtureAbstract {
 	}
 	public void setName(String name) {
 		this.name=name;
-	}
+	}*/
 }
